@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.sqr-box{
+    height: 31.11px;
+    width: 31.11px;
+    border: 1px solid black;
+}
+
+#container{
+    margin: 100px;
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    display: flex;
+    justify-content: center;
+
+}
