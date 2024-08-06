@@ -18,8 +18,8 @@
 
 #container{
     margin: 100px;
-    height: 500px;
-    width: 500px;
+    height: 502px;
+    width: 502px;
     border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
