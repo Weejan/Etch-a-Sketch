@@ -11,8 +11,6 @@
 }
 
 .sqr-box{
-    height: 31.11px;
-    width: 31.11px;
     border: 1px solid black;
 }
 
@@ -24,8 +22,4 @@
     display: flex;
     flex-wrap: wrap;
 }
-body{
-    display: flex;
-    justify-content: center;
 
-}
