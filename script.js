@@ -3,7 +3,6 @@ let boxSize = 33.2
 let gridSize = 19
 //function to create the grid
 function grid(gridSize){
-    if (gridSize <= 100 && gridSize >= 1){
         let boxSize = 500/ gridSize
     for(i = 0; i < gridSize; i++){
         let column = document.createElement('div');
@@ -15,10 +14,6 @@ function grid(gridSize){
         }
         container.appendChild(column)
     }
-    }else{
-        alert("Invalid grid size! Should be less that 100!!")
-    }
-    
 }
 
 //function to set box size of the grid
@@ -41,10 +36,18 @@ function gridButton(){
     button.textContent = "Change Grid";
     button.addEventListener('click',()=>{
         gridSize = prompt("Input your grid size up to 100")
-        let div = document.querySelectorAll('div');
-        div.forEach((item)=>{item.remove();})
-        grid(gridSize)
-        hover()})
+
+        if (gridSize <= 100 && gridSize >= 1){
+            let div = document.querySelectorAll('div');
+            div.forEach((item)=>{item.remove();})
+            grid(gridSize)
+            hover()
+        }else{
+                alert("Invalid grid size! Should be less that 100!!")
+            }
+        }
+    )
+    button.style.marginLeft = "127.31px";
     document.body.appendChild(button)
 }
 
